@@ -91,7 +91,7 @@
                     </div>
                     @if (Route::has('login'))
                         @auth
-                            <nav id="mobile-menu">
+                            {{-- <nav id="mobile-menu">
                                 <ul class="main-nav">
                                     <li class="has-submenu megamenu active">
                                         <a href="javascript:void(0);">Home<i class="fa-solid fa-angle-down"></i></a>
@@ -386,7 +386,7 @@
                                         </ul>
                                     </li>
                                 </ul>
-                            </nav>
+                            </nav> --}}
                             {{-- ========= Profile ========= --}}
                             <div class="header-btn d-flex align-items-center">
                                 <div class="me-3">
