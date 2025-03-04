@@ -6,7 +6,7 @@
     <!-- Header -->
     <header class="header-four">
         <div class="container">
-            {{-- <div class="offcanvas-info">
+            <div class="offcanvas-info">
                 <div class="offcanvas-wrap">
                     <div class="offcanvas-detail">
                         <div class="offcanvas-head">
@@ -76,16 +76,17 @@
                         </div>
                     </div>
                 </div>
-            </div> --}}
+            </div>
             <div class="offcanvas-overlay"></div>
             <div class="header-nav">
                 <div class="main-menu-wrapper">
                     <div class="navbar-logo">
                         <a class="logo-white header-logo" href="index-2.html">
-                            <img src="assets/img/logo-dark.svg" class="logo" alt="Logo">
+                            {{-- <img src="{{asset('assets/img/logo.svg')}}" class="logo" alt="Logo"> --}}
+                            <img src="{{ asset('assets/img/admin/logo.png') }}" style="width: 100px" class="logo" alt="Logo">
                         </a>
                         <a class="logo-dark header-logo" href="index-2.html">
-                            <img src="assets/img/logo.svg" class="logo" alt="Logo">
+                            <img src="{{ asset('assets/img/admin/logo-dark.png') }}" style="width: 100px" class="logo" alt="Logo">
                         </a>
                     </div>
                     @if (Route::has('login'))
@@ -388,6 +389,14 @@
                             </nav>
                             {{-- ========= Profile ========= --}}
                             <div class="header-btn d-flex align-items-center">
+                                <div class="me-3">
+                                    <a href="javascript:void(0);" id="dark-mode-toggle" class="theme-toggle">
+                                        <i class="isax isax-moon"></i>
+                                    </a>
+                                    <a href="javascript:void(0);" id="light-mode-toggle" class="theme-toggle">
+                                        <i class="isax isax-sun-1"></i>
+                                    </a>
+                                </div>
                                 <div class="dropdown profile-dropdown">
                                     <a href="javascript:void(0);" class="d-flex align-items-center" data-bs-toggle="dropdown">
                                         <span class="avatar avatar-md">
