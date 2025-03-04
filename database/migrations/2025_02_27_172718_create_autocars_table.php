@@ -16,7 +16,7 @@ return new class extends Migration
         Schema::create('autocars', function (Blueprint $table) {
             $table->id();
             $table->bigInteger('nbr_siege');
-            $table->string('image');
+            $table->string('image')->nullable();
             $table->string('matricule');
             $table->unsignedBigInteger('societe_id');
             $table->foreign('societe_id')->references('id')->on('societes');
