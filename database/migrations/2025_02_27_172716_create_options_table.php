@@ -13,9 +13,10 @@ return new class extends Migration
     {
         Schema::create('options', function (Blueprint $table) {
             $table->id();
-            $table->string('option');
+            $table->string('name'); // تغيير 'option' إلى 'name'
             $table->timestamps();
         });
+
     }
 
     /**

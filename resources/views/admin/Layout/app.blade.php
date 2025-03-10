@@ -35,7 +35,7 @@
         <div class="app-content">
             @yield('content')
         </div>
-        
+
         <!--end::App Content-->
       </main>
       <!--end::App Main-->
@@ -43,12 +43,14 @@
       <!--begin::Footer-->
         @include('admin.Layout.footer')
       <!--end::Footer-->
-      
+
     </div>
     <!--end::App Wrapper-->
     <!--begin::Script-->
     @include('admin.Layout.script')
     <!--end::Script-->
+
+    <script src="{{ url('assets/js/messages.js') }}"></script>
   </body>
   <!--end::Body-->
 </html>
